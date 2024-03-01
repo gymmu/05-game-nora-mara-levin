@@ -10,7 +10,7 @@
     "format": "prettier --write src/"
   },
   "keywords": [],
-  "author": "Cedric Geissmann <cedric.geissmann@sbl.ch>",
+  "author": "Nora, Mara, Levin",
   "contributors": [],
   "license": "ISC",
   "devDependencies": {
