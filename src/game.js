@@ -31,7 +31,7 @@ import { getPlayer } from "./player.js"
  * vielfaches von TILESIZE.
  */
 export const k = kaboom({
-  font: "sinko",
+  //font: "sinko",
   background: [0, 0, 0],
   debug: true,
   height: TILESIZE * 16,
@@ -87,7 +87,7 @@ export function addGeneralGameLogic() {
    * Sekunde verdoppelt. Danach wird die Geschwindigkeit wieder zurück
    * gesetzt.
    */
-  player.on("heal", () => {
+  player.on("hurt", () => {
     const oldSpeed = player.speed
     player.speed *= 2
     k.wait(1, () => {
