@@ -38,6 +38,15 @@ export function wallJumpAndRun(x, y) {
   ])
 }
 
+export function background(x, y) {
+  k.add([
+    k.sprite("background", { width: k.width(), height: k.height() }),
+    k.pos(0, 0),
+    k.fixed(),
+    k.z(-100), // z= wie tief etwas im bild ist.
+  ])
+}
+
 /**
  * Ein Pilz Spielobjekt, das dem Spieler schaden zufügt.
  */
