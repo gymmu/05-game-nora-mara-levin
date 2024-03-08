@@ -1,6 +1,7 @@
 import { k, addGeneralGameLogic } from "../game.js"
 import { generateMapRPG } from "../map.js"
 import { loadKeyboardRPG } from "../keyboard.js"
+import createPlayer from "../player.js"
 
 import "./finish.js"
 
@@ -11,6 +12,9 @@ import "./finish.js"
  */
 k.scene("level-02", async () => {
   k.setGravity(0)
+
+  createPlayer()
+
   loadKeyboardRPG()
 
   await generateMapRPG("maps/level-02.txt")
