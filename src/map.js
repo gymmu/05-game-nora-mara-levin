@@ -88,6 +88,8 @@ export async function generateMapRPG(mapfile) {
         GameObjects.flowerRPG(x, y)
       } else if (char === "m") {
         GameObjects.mushroomRPG(x, y)
+      } else if (char === "e") {
+        GameObjects.egg(x, y)
       }
     }
   }

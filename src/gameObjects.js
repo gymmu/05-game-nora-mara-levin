@@ -209,3 +209,15 @@ export function mushroomRPG(x, y) {
     },
   ])
 }
+
+export function egg(x, y) {
+  k.add([
+    k.sprite("egg"),
+    k.pos(x * TILESIZE, y * TILESIZE),
+    k.area(),
+    "heal",
+    {
+      isConsumable: true,
+    },
+  ])
+}
