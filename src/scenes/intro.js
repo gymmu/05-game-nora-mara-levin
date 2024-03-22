@@ -32,6 +32,6 @@ k.scene("intro", () => {
   // Szene gewechselt. In der nächsten Szene können wir `space` dann auch zum
   // Springen verwenden.
   k.onKeyPress("space", () => {
-    k.go("level-02")
+    k.go("level-01")
   })
 })

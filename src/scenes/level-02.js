@@ -13,7 +13,7 @@ import "./finish.js"
 k.scene("level-02", async () => {
   k.setGravity(0)
 
-  createPlayer()
+  //createPlayer()
 
   loadKeyboardRPG()
 
