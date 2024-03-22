@@ -47,6 +47,8 @@ export default function loadSprites() {
     cave: { x: 2 * TS, y: 1 * TS, width: TS, height: TS },
     wall: { x: 3 * TS, y: 1 * TS, width: TS, height: TS },
     egg: { x: 0 * TS, y: 2 * TS, width: TS, height: TS },
+    cloud: { x: 1 * TS, y: 2 * TS, width: TS, height: TS },
+    rainbow: { x: 2 * TS, y: 2 * TS, width: TS, height: TS },
   })
 
   k.loadSpriteAtlas("sprites/background.jpeg", {

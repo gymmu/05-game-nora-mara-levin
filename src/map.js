@@ -83,13 +83,15 @@ export async function generateMapRPG(mapfile) {
       } else if (char === "T") {
         GameObjects.trunkRPG(x, y)
       } else if (char === "t") {
-        GameObjects.treeRPG(x, y)
+        GameObjects.cloudRPG(x, y)
       } else if (char === "f") {
         GameObjects.flowerRPG(x, y)
       } else if (char === "m") {
         GameObjects.mushroomRPG(x, y)
       } else if (char === "e") {
         GameObjects.egg(x, y)
+      } else if (char === "r") {
+        GameObjects.rainbow(x, y)
       }
     }
   }
