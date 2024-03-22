@@ -44,8 +44,8 @@ export async function generateMapJumpAndRun(mapfile) {
         GameObjects.wallJumpAndRun(x, y)
       } else if (char === "o") {
         GameObjects.mushroomJumpAndRun(x, y)
-      } else if (char === "f") {
-        GameObjects.flowerJumpAndRun(x, y)
+      } else if (char === "e") {
+        GameObjects.egg(x, y)
       } else if (char === "g") {
         GameObjects.goalJumpAndRun(x, y)
       }
@@ -75,7 +75,7 @@ export async function generateMapRPG(mapfile) {
         const player = getPlayer()
         player.pos = k.vec2(x, y).scale(TILESIZE)
       } else if (char === "s") {
-        GameObjects.stoneRPG(x, y)
+        GameObjects.rainbowRPG(x, y)
       } else if (char === "w") {
         GameObjects.wallRPG(x, y)
       } else if (char === "c") {
@@ -91,7 +91,7 @@ export async function generateMapRPG(mapfile) {
       } else if (char === "e") {
         GameObjects.egg(x, y)
       } else if (char === "r") {
-        GameObjects.rainbow(x, y)
+        GameObjects.rainbowRPG(x, y)
       }
     }
   }
