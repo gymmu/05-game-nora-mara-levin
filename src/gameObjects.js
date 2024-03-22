@@ -176,6 +176,7 @@ export function cloudRPG(x, y) {
     k.pos(x * TILESIZE, y * TILESIZE),
     k.body({ isStatic: true }),
     k.area(),
+    "cloud",
   ])
 }
 

@@ -1,9 +1,10 @@
 import { k, addGeneralGameLogic } from "../game.js"
 import { generateMapRPG } from "../map.js"
 import { loadKeyboardRPG } from "../keyboard.js"
-import createPlayer from "../player.js"
+import createPlayer, { getPlayer } from "../player.js"
 
 import "./finish.js"
+import { TILESIZE } from "../globals.js"
 
 /**
  * Szene für das Level 2.
@@ -21,10 +22,20 @@ k.scene("level-02", async () => {
 
   addGeneralGameLogic()
 
+  const player = getPlayer()
+  player.speed = 5 * TILESIZE
+
   k.onCollide("player", "cave", (player) => {
     if (player.hasFlower === true) {
       k.go("finish")
     }
+  })
+
+  k.onCollide("player", "cloud", (player, cloud) => {
+    // cloud.destroy()
+    player.pos.x = 39 * TILESIZE
+    player.pos.y = 18 * TILESIZE
+    player.speed += TILESIZE
   })
 
   k.onCollide("player", "flower", (player, flower) => {
