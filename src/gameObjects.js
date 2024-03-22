@@ -118,9 +118,9 @@ export function backgroundRPG(x, y) {
  *
  * Soll den Spieler blockieren.
  */
-export function stoneRPG(x, y) {
+export function rainbowRPG(x, y) {
   k.add([
-    k.sprite("stone"),
+    k.sprite("rainbow"),
     k.pos(x * TILESIZE, y * TILESIZE),
     k.body({ isStatic: true }),
     k.area(),
@@ -170,9 +170,9 @@ export function trunkRPG(x, y) {
 /**
  * Ein Spielobjekt Baum. Wird als Hindernis für den Spieler verwendet.
  */
-export function treeRPG(x, y) {
+export function cloudRPG(x, y) {
   k.add([
-    k.sprite("tree"),
+    k.sprite("cloud"),
     k.pos(x * TILESIZE, y * TILESIZE),
     k.body({ isStatic: true }),
     k.area(),
