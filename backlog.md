@@ -21,3 +21,4 @@
 - [x] merch problem beheben l/g
 - [ ] wieder bei level 1 starten nicht bei 2 (beide levels) g/m
 - [ ] wieder zur map kommen g
+- [ ] mergres ist kein problem ?
