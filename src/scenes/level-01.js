@@ -4,7 +4,7 @@ import { generateMapJumpAndRun } from "../map.js"
 import { loadKeyboardJumpAndRun } from "../keyboard.js"
 import * as GameObjects from "../gameObjects.js"
 
-import "./level-02.js"
+import "./level-01.js"
 import "./lose.js"
 
 /** Das ist unser erstes Level. Hier können wir Dinge einstellen die nur für
