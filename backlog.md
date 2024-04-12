@@ -12,7 +12,7 @@
 - [x] Spielkomponenten verstehen, und neue erstellen (`src/player.js` und
       `src/maps.js`)
 - [ ] Präsentation für das Endprodukt in (`pres.html`) anpassen
-- [ ] gezeichnete symbole einfügen
+- [x] gezeichnete symbole einfügen
 - [x] hinter grund map level 2 m
 - [x] level 2 start geschwindigkeit und wenn man in rand läuft ist man tod ?
 - [ ] Portal am levelstart entfernen.
@@ -28,3 +28,7 @@
 - [ ] alle 3 wieder auf gleichem stand sein
 - [x] Fehler beim berühren der Wolke in Level 2 beheben
 - [ ] Fehler ,,Leben verlieren'' beim berühren der Wolke beheben
+- [ ] ziel des spiels? wenn man eier sammelt plus leben wenn man 3 pilze sammelt
+      stirbt man
+- [ ] level 3 "ziel erreicht" plus score 2 du hast ... eier gesammelt und ...
+      geholfen alle seine eier wieder einzusammeln

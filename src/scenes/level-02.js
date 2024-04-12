@@ -33,7 +33,7 @@ k.scene("level-02", async () => {
 
   k.onCollide("player", "cloud", (player, cloud) => {
     // cloud.destroy()
-    player.pos.x = 39 * TILESIZE
+    player.pos.x = 38 * TILESIZE
     player.pos.y = 18 * TILESIZE
     player.speed += TILESIZE
   })

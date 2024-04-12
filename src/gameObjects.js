@@ -175,7 +175,7 @@ export function cloudRPG(x, y) {
     k.sprite("cloud"),
     k.pos(x * TILESIZE, y * TILESIZE),
     k.body({ isStatic: true }),
-    k.area(),
+    k.area({ shape: new k.Rect(k.vec2(8, 8), 16, 16) }),
     "cloud",
   ])
 }
@@ -219,6 +219,7 @@ export function egg(x, y) {
     "heal",
     {
       isConsumable: true,
+      healAmount: 200,
     },
   ])
 }
