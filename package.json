@@ -1,6 +1,6 @@
 {
   "name": "Osterjagd",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Einstiegspunkt in ein Spielprojekt.",
   "type": "module",
   "scripts": {
