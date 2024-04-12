@@ -66,6 +66,9 @@ export function addGeneralGameLogic() {
    */
   k.onCollide("heal", "player", (heal, player) => {
     player.heal(heal.healAmount)
+    if (player.hp() >= player.max_hp) {
+      player.hp(player.max_hp)
+    }
     if (heal.isConsumable === true) {
       heal.destroy()
     }
