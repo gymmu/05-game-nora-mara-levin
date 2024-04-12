@@ -21,8 +21,10 @@
 
 - [x] merch problem beheben
 - [ ] screenshot der maps in website machen
-- [ ] radius des collidieren mit Wolke verkleinern in map 2
+- [x] radius des collidieren mit Wolke verkleinern in map 2
 - [x] wieder bei level 1 starten nicht bei 2 (beide levels)
 - [x] wieder zur map kommen g
 - [x] mergres ist kein problem ?
 - [ ] alle 3 wieder auf gleichem stand sein
+- [x] Fehler beim berühren der Wolke in Level 2 beheben
+- [ ] Fehler ,,Leben verlieren'' beim berühren der Wolke beheben

@@ -9,7 +9,7 @@ import { TILESIZE } from "./globals.js"
 export function wallJumpAndRun(x, y) {
   k.add([
     // Sagt welche Grafik verwendet werden soll.
-    k.sprite("wall"),
+    k.sprite("cloud"),
 
     // Sagt dem Spielobjekt das es eine Position auf der Spielkarte hat, und wo
     // diese ist. Die Spielposition wird mit der TILESIZE skaliert, damit alles
