@@ -44,6 +44,7 @@ export function background(x, y) {
     k.pos(0, 0),
     k.fixed(),
     k.z(-100), // z= wie tief etwas im bild ist.
+    k.scale(1.1),
   ])
 }
 

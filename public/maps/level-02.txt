@@ -4,7 +4,7 @@ s...tttttttttt.....tttttttttttttttt....s
 s..e....tttttttt.....tttttttttttttt....s
 s......tttttttt......tttttttttttt......s
 s......t.........t.....ttttttt....ttttts
-sttttt........T.....T......e...........s
+sttttt.....................e...........s
 sttt.....tttttttttttttttttttttttttt....s
 s.........tttt.........................s
 s...tttt..e......tttttttttttttttttt....s
