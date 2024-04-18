@@ -217,6 +217,7 @@ export function egg(x, y) {
     k.pos(x * TILESIZE, y * TILESIZE),
     k.area(),
     "heal",
+    "egg",
     {
       isConsumable: true,
       healAmount: 200,

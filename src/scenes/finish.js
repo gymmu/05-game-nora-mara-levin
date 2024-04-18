@@ -8,9 +8,18 @@ import "./intro.js"
  */
 k.scene("finish", () => {
   const player = getPlayer()
+  const numEggs = player.eggs_collected
   player.destroy()
   k.add([
-    k.text("Ziel erreicht", { size: 32, font: "sinko" }),
+    k.text(
+      " Sie haben " +
+        numEggs +
+        " Eier gesammelt und dem Osterhasen dabei geholfen, sein Ziel zu erreichen",
+      {
+        size: 32,
+        font: "sinko",
+      },
+    ),
     k.pos(k.width() / 2, k.height() / 2),
     k.anchor("center"),
   ])

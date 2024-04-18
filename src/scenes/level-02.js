@@ -26,9 +26,7 @@ k.scene("level-02", async () => {
   player.speed = 5 * TILESIZE
 
   k.onCollide("player", "cave", (player) => {
-    if (player.hasFlower === true) {
-      k.go("finish")
-    }
+    k.go("finish")
   })
 
   k.onCollide("player", "cloud", (player, cloud) => {
@@ -41,5 +39,9 @@ k.scene("level-02", async () => {
   k.onCollide("player", "flower", (player, flower) => {
     flower.destroy()
     player.hasFlower = true
+  })
+
+  k.onCollide("player", "egg", (player, egg) => {
+    player.eggs_collected += 1
   })
 })

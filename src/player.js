@@ -39,6 +39,7 @@ export default function createPlayer() {
       dir: null,
       dead: false,
       max_hp: 100,
+      eggs_collected: 0,
     },
   ])
 
