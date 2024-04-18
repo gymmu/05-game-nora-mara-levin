@@ -20,7 +20,7 @@
 ## g
 
 - [x] merch problem beheben
-- [ ] screenshot der maps in website machen
+- [x] screenshot der maps in website machen
 - [x] radius des collidieren mit Wolke verkleinern in map 2
 - [x] wieder bei level 1 starten nicht bei 2 (beide levels)
 - [x] wieder zur map kommen g
