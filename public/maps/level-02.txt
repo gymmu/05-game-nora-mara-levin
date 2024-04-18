@@ -3,9 +3,9 @@ s.........ttt..........................s
 s...tttttttttt.....tttttttttttttttt....s
 s..e....tttttttt.....tttttttttttttt....s
 s......tttttttt......tttttttttttt......s
-s......t.........t.....ttttttt....ttttts
+s......t..........o....ttttttt....ttttts
 sttttt.....................e...........s
-sttt.....tttttttttttttttttttttttttt....s
+sttt.....tttttttttttttttttttttttttt.o..s
 s.........tttt.........................s
 s...tttt..e......tttttttttttttttttt....s
 s...tttt..ttttttttttttttttttttttttt....s
@@ -16,5 +16,5 @@ stttttttttt....ttttttttttttttttttttt...s
 s...........e........................e.s
 sttttttttttttttttttt...............t...s
 s.....................tttttttttt...t...s
-s...e..........................ttttt.p.s
+s...e.........o................ttttt.p.s
 ssssssssssssssssssssssssssssssssssssssss
