@@ -12,9 +12,9 @@ k.scene("finish", () => {
   player.destroy()
   k.add([
     k.text(
-      " Sie haben " +
+      "Sie haben " +
         numEggs +
-        " Eier gesammelt und dem Osterhasen dabei geholfen, sein Ziel zu erreichen",
+        " Eier gesammelt\nund dem Osterhasen dabei geholfen, sein Ziel zu erreichen",
       {
         size: 32,
         font: "sinko",
