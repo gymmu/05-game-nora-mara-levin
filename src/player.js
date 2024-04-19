@@ -18,12 +18,14 @@ export default function createPlayer() {
 
     // Gibt dem Spieler Lebenspunkte und die möglichkeit über die Funktionen
     // `hurt` und `heal` mit dem Spieler zu interagieren.
-    k.health(50),
+    k.health(5),
 
     // Damit wird der Spieler nicht zerstört wenn die Szene gewechselt wird.
     // Der Spieler muss dann aber bei GameOver und ähnlichen Szenen von
     // Hand gelöscht werden.
     k.stay(),
+
+    k.doubleJump(2),
 
     // Das `Tag` für den Spieler, damit man Ihn einfach über kaboom erreichen
     // kann. Es sollte keine anderen Objekte geben, die auch dieses `Tag`
@@ -36,7 +38,8 @@ export default function createPlayer() {
       speed: TILESIZE * 5,
       dir: null,
       dead: false,
-      max_hp: 100,
+      max_hp: 10,
+      eggs_collected: 0,
     },
   ])
 
@@ -46,8 +49,8 @@ export default function createPlayer() {
   player.onUpdate(() => {
     k.camPos(player.pos)
   })
+  player.setMaxHP(player.max_hp)
 }
-
 /**
  *  Hilfsfunktion um das Spielobjekt von `player` einfach zu bekommen.
  */

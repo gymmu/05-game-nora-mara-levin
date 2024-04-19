@@ -9,7 +9,7 @@ import { TILESIZE } from "./globals.js"
 export function wallJumpAndRun(x, y) {
   k.add([
     // Sagt welche Grafik verwendet werden soll.
-    k.sprite("wall"),
+    k.sprite("cloud"),
 
     // Sagt dem Spielobjekt das es eine Position auf der Spielkarte hat, und wo
     // diese ist. Die Spielposition wird mit der TILESIZE skaliert, damit alles
@@ -38,6 +38,16 @@ export function wallJumpAndRun(x, y) {
   ])
 }
 
+export function background(x, y) {
+  k.add([
+    k.sprite("background", { width: k.width(), height: k.height() }),
+    k.pos(0, 0),
+    k.fixed(),
+    k.z(-100), // z= wie tief etwas im bild ist.
+    k.scale(1.1),
+  ])
+}
+
 /**
  * Ein Pilz Spielobjekt, das dem Spieler schaden zufügt.
  */
@@ -54,7 +64,7 @@ export function mushroomJumpAndRun(x, y) {
     // hat.
     {
       isConsumable: true,
-      dmgAmount: 10,
+      dmgAmount: 2,
     },
   ])
 }
@@ -71,7 +81,7 @@ export function flowerJumpAndRun(x, y) {
     "heal",
     {
       isConsumable: true,
-      healAmount: 5,
+      healAmount: 1,
     },
   ])
 }
@@ -109,9 +119,9 @@ export function backgroundRPG(x, y) {
  *
  * Soll den Spieler blockieren.
  */
-export function stoneRPG(x, y) {
+export function rainbowRPG(x, y) {
   k.add([
-    k.sprite("stone"),
+    k.sprite("rainbow"),
     k.pos(x * TILESIZE, y * TILESIZE),
     k.body({ isStatic: true }),
     k.area(),
@@ -161,12 +171,13 @@ export function trunkRPG(x, y) {
 /**
  * Ein Spielobjekt Baum. Wird als Hindernis für den Spieler verwendet.
  */
-export function treeRPG(x, y) {
+export function cloudRPG(x, y) {
   k.add([
-    k.sprite("tree"),
+    k.sprite("cloud"),
     k.pos(x * TILESIZE, y * TILESIZE),
     k.body({ isStatic: true }),
-    k.area(),
+    k.area({ shape: new k.Rect(k.vec2(8, 8), 16, 16) }),
+    "cloud",
   ])
 }
 
@@ -197,6 +208,20 @@ export function mushroomRPG(x, y) {
     "obstacle",
     {
       isConsumable: true,
+    },
+  ])
+}
+
+export function egg(x, y) {
+  k.add([
+    k.sprite("egg"),
+    k.pos(x * TILESIZE, y * TILESIZE),
+    k.area(),
+    "heal",
+    "egg",
+    {
+      isConsumable: true,
+      healAmount: 1,
     },
   ])
 }
