@@ -11,11 +11,11 @@
 - [x] Karten verstehen und verändern (`src/maps.js`)
 - [x] Spielkomponenten verstehen, und neue erstellen (`src/player.js` und
       `src/maps.js`)
-- [ ] Präsentation für das Endprodukt in (`pres.html`) anpassen
+- [x] Präsentation für das Endprodukt in (`pres.html`) anpassen
 - [x] gezeichnete symbole einfügen
 - [x] hinter grund map level 2 m
 - [x] level 2 start geschwindigkeit und wenn man in rand läuft ist man tod ?
-- [ ] Portal am levelstart entfernen.
+- [x] Portal am levelstart entfernen.
 
 ## g
 
@@ -25,10 +25,10 @@
 - [x] wieder bei level 1 starten nicht bei 2 (beide levels)
 - [x] wieder zur map kommen g
 - [x] mergres ist kein problem ?
-- [ ] alle 3 wieder auf gleichem stand sein
+- [x] alle 3 wieder auf gleichem stand sein
 - [x] Fehler beim berühren der Wolke in Level 2 beheben
-- [ ] Fehler ,,Leben verlieren'' beim berühren der Wolke beheben
-- [ ] ziel des spiels? wenn man eier sammelt plus leben wenn man 3 pilze sammelt
+- [x] Fehler ,,Leben verlieren'' beim berühren der Wolke beheben
+- [x] ziel des spiels? wenn man eier sammelt plus leben wenn man 3 pilze sammelt
       stirbt man
-- [ ] level 3 "ziel erreicht" plus score 2 du hast ... eier gesammelt und ...
+- [x] level 3 "ziel erreicht" plus score 2 du hast ... eier gesammelt und ...
       geholfen alle seine eier wieder einzusammeln
